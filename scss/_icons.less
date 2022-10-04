@@ -1,0 +1,31 @@
+.icon {
+    display: inline-flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &--arrow-right {
+        background-image: url('../img/arrow-right-white.svg');
+        width: 14px;
+        height: 14px;
+    }
+
+    &--arrow-right-brown {
+        background-image: url('../img/arrow-right-brown.svg');
+        width: 14px;
+        height: 14px;
+    }
+}
+
+.link-icon {
+    display: inline-flex;
+    align-items: center;
+    font-size: 24px;
+    font-family: @font_light;
+
+    &--left {
+        .icon {
+            margin-right: 8px;
+        }
+    }
+}

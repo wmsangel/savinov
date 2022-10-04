@@ -1,0 +1,31 @@
+.tab-content {
+    &:not(.is-selected) {
+        display: none;
+    }
+}
+
+.tab-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 64px;
+}
+
+.tab-link {
+    margin: 0 32px 24px;
+    font-size: 20px;
+    font-family: @font_wremena;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+
+    &.is-selected {
+        color: #AF817D;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+        margin-right: 24px;
+        margin-left: 0;
+    }
+}
