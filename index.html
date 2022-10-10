@@ -7,7 +7,9 @@
     <title>Музей Русского Импрессионизма</title>
 
     <link href="http://fonts.cdnfonts.com/css/circe" rel="stylesheet">
-    
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="js/plugins/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -25,11 +27,10 @@
                 <nav>
                     <ul>
                         <li><a href="#" class="header__link js-goto-link" data-pageid="about">о выставке</a></li>
-                        <li><a href="#" class="header__link js-goto-link" data-pageid="pictures">картины</a></li>
+                        <li><a href="#" class="header__link js-goto-link" data-pageid="pictures-block">аудиогид</a></li>
                         <li><a href="#" class="header__link js-goto-link" data-pageid="spec">спецпроект</a></li>
-                        <li><a href="#" class="header__link js-goto-link" data-pageid="excursion">экскурсия</a></li>
-                        <li><a href="#" class="header__link js-goto-link" data-pageid="events">мероприятия</a></li>
-                        <li><a href="#" class="header__link js-goto-link" data-pageid="about-museum">о музее</a></li>
+                        <li><a href="#" class="header__link js-goto-link" data-pageid="obr-programm">мероприятия</a></li>
+                        <li><a href="#" class="header__link js-goto-link" data-pageid="excursion">о музее</a></li>
                         <li><a href="https://www.parter.ru/noapp/eventseries/3061143/?affiliate=IMR" target="_blank" class="btn-link-red header__link is-buy-link">
                             <span class="icon icon--arrow-right"></span>
                             купить билет
@@ -46,48 +47,48 @@
     <section class="section-hero">
         <div class="container">
             <div class="hero">
-                <div class="hero__place">
+                <div class="hero__place" data-aos="fade-right">
                     музей
                     <br>русского
                     <br>импрессионизма
                 </div>
 
-                <div class="hero__date">
+                <div class="hero__date" data-aos="fade-right" data-aos-delay="400">
                     21.10.2022 — 22.01.2023
                 </div>
 
-                <div class="hero__title">
+                <div class="hero__title" data-aos="fade-right" data-aos-delay="800">
                     <div class="hero__title-top">Александр Савинов</div>
                     <div class="hero__title-middle">МИРАЖИ</div>
                     <div class="hero__title-bottom">Саратовская школа</div>
                 </div>
 
-                <div class="hero__buy">
+                <div class="hero__buy" data-aos="fade-right" data-aos-delay="1000">
                     <a href="https://www.parter.ru/noapp/eventseries/3061143/?affiliate=IMR" target="_blank" class="link-icon link-icon--left"><span class="icon icon--arrow-right"></span>купить билет</a>
                 </div>
 
-                <div class="hero-woman"><img src="img/hero-woman.png" srcset="img/hero-woman@2x.png 2x" alt=""></div>
+                <div class="hero-woman" data-aos="fade-left"><img src="img/hero-woman.png" srcset="img/hero-woman@2x.png 2x" alt=""></div>
             </div>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
-            <div class="title-h1">«Александр Савинов. Миражи»</div>
-            <div class="about">
+            <div class="title-h1" data-aos="fade-up">«Александр Савинов. Миражи»</div>
+            <div class="about" data-aos="fade-up">
                 <div class="about__left">Имя художника Александра Савинова (1881–1942) — мастера многофигурной картины-панно, работавшего в царской и советской России, в эпоху модерна и социалистического реализма, — сегодня незаслуженно забыто. Уроженец Саратова, Савинов испытал влияние манеры Виктора Борисова-Мусатова, учился живописи у Дмитрия Кардовского в петербургской Академии художеств, а в середине 1900-х занимался в Париже.</div>
                 <div class="about__right">Авторский стиль Савинова сложился в Саратове и достиг совершенства в Италии, куда художник отправился в пенсионерскую поездку от академии. В советской России портреты Савинова критикуют за «формализм», а масштабные жанровые картины — к юбилею Красной армии и «В парке культуры» — оказываются оригинальной интерпретацией стиля социалистического реализма.</div>
             </div>
-            <div class="about">
+            <div class="about" data-aos="fade-up">
                 <div class="about__left">
                     <div class="about-partner">
-                        <span class="is-full">При поддержке:</span>
+                        <span class="is-full">официальный партнер выставки:</span>
                         <span>
-                            <a href="https://premiagi.ru/" target="_blank"><img src="img/fond-logo.png" srcset="img/fond-logo@2x.png 2x" alt=""></a>
+                            <a href="https://premiagi.ru/" target="_blank"><img src="img/fond-logo.png" srcset="img/fond-logo@2x.png 2x" alt="" width="60" height="60"></a>
                         </span>
                         <span>
-                            Официальный партнер выставки
-                            <br>Фонд поддержки национальной премии 
+                            Фонд поддержки
+                            <br>национальной премии
                             <br>«Гражданская инициатива»
                         </span>
                     </div>
@@ -96,7 +97,7 @@
 
                 </div>
             </div>
-            <div class="catalog-buy">
+            <div class="catalog-buy" data-aos="fade-up" >
                 <span>
                     <img src="img/catalog-teaser.png" srcset="img/catalog-teaser@2x.png 2x" alt="">
                 </span>
@@ -112,7 +113,7 @@
         </div>
     </section>
 
-    <section id="pictures">
+    <section id="pictures" data-aos="fade-up">
         <div class="container">
             <div class="title-h1">&nbsp;</div>
 
@@ -141,7 +142,9 @@
                                 <div class="picture">
                                     <div class="picture__img">
                                         <img src="img/media/picutre2.png" srcset="img/media/picutre2@2x.png 2x" alt="">
-                                        <div class="picture__place">Собрание Ирины Огановой, Санкт-Петербург </div>
+                                        <div class="picture__place">Купальщицы в апельсиновои оливковой рощице. Фрагмент 1909–1911
+                                            <br>Собрание Ирины Огановой, Санкт-Петербур
+                                        </div>
                                     </div>
                                     <div class="picture__info">
                                         <div class="picture__title">
@@ -161,7 +164,7 @@
                                     </div>
                                     <div class="picture__info">
                                         <div class="picture__title">
-                                            Источником силы, энергии и вдохновения для художника стали родные места — Саратов и Волга.
+                                            Источником силы, энергии и вдохновения для художника стали родные места — Саратов и Волга
                                         </div>
                                         <div class="picture__text">
                                             Картина <span>«Окно» (1909)</span> была написана Савиновым в Саратове, в период кратковременного визита художника в родной город между первым и вторым этапами пенсионерской поездки в Италию. Подтверждением этому стало письмо Александра Савинова невесте Лии Цитовской: «...затем начал этюд окна, видно небо, старые здания отживающего свой век былого Саратова, церковка с зелеными куполами, верхушки деревьев с вороньими гнездами, каменные и деревянные постройки, полуразвалившаяся старая заплесневевшая стена. Туманно все, сыро».
@@ -180,7 +183,7 @@
                                             Художественная система Александра Савинова сложилась под влиянием классического искусства античности и Ренессанса
                                         </div>
                                         <div class="picture__text">
-                                            Женский образ в <span>«Портрете Надежды Неслуховской» (1923)</span> по манере исполнения близок к произведениям мастеров эпохи Возрождения — Сандро Боттичелли и Леонардо да Винчи. Художнику позировала его племянница Надя Неслуховская (1893–1971), а работа над портретом велась в петроградской квартире на Зверинской улице. Сосед Савиновых, поэт Николай Тихонов, описывает историю создания портрета: «С ним было у меня смешное недоразумение. <...> Я заглянул в мастерскую Александра Ивановича <...> и увидел, что спиной ко мне сидит Надя Неслуховская в позе, в которой ее рисовал Савинов. Я молча спустился вниз, <...> где были все Неслуховские. К моему удивлению, среди них сидела и Надя Неслуховская. Мое лицо так отражало недоумение, что Надя, смеясь, сказала: Вы видели меня наверху, в мастерской. Так это была не я, а кукла, одетая в мое платье. Я устала позировать, и Александр Иванович отпустил меня, а продолжал рисовать платье с куклы...»
+                                            Женский образ в <span>«Портрете Надежды Неслуховской» (1923)</span> по манере исполнения близок к произведениям мастеров эпохи Возрождения — Сандро Боттичелли и Леонардо да Винчи. Художнику позировала его племянница Надя Неслуховская (1893–1971), а работа над портретом велась в Петрограде.
                                         </div>
                                     </div>
                                 </div>
@@ -195,7 +198,7 @@
 
                 <div class="orange-line"></div>
 
-                <div class="block">
+                <div class="block" data-aos="fade-up" id="pictures-block">
                     <div class="title-h2">
                         Посетите выставку с музейным гидом или куратором вставки
                     </div>
@@ -205,12 +208,12 @@
                     </div>
                 </div>
 
-                <div class="block">
+                <div class="block" data-aos="fade-up">
                     <div class="title-h2">
                         Познавательная прогулка по выставке на 60 минут
                     </div>
                     <div class="simple-text">
-                        <p>Аудиогид доступен в приложении музея и на платформе Soundcloud</p>
+                        <p>Аудиогид доступен в приложении музея</p>
                         <div class="links-services">
                             <a href="https://apps.apple.com/ru/app/rusimp/id1116588246?l=en" target="_blank">
                                 <img src="img/appstore.png" srcset="img/appstore@2x.png 2x" alt="">
@@ -219,12 +222,6 @@
                             <a href="https://play.google.com/store/apps/details?id=lc.deck.museum" target="_blank">
                                 <img src="img/googleplay.png" srcset="img/googleplay@2x.png 2x" alt="">
                             </a>
-
-                            <a href="https://soundcloud.com/rusimp/sets" target="_blank">
-                                <img src="img/soundcloud.png" srcset="img/soundcloud@2x.png 2x" alt="">
-                            </a>
-
-                            <a href="https://soundcloud.com/rusimp/sets" target="_blank" class="link-icon link-icon--left"><span class="icon icon--arrow-right-brown"></span>скачать приложение и аудиогид</a>
                         </div>
                     </div>
                 </div>
@@ -235,26 +232,32 @@
 
     <section id="spec">
         <div class="container">
-            <div class="title-h1">Миражи. Саратовская школа</div>
-            <p class="quote">«Это был воплощенный в краски сон, или туманные и призрачные мечты, или звенящий смех сквозь слезы…»</p>
-            <div class="about">
+            <div class="title-h1" data-aos="fade-up">Миражи. Саратовская школа</div>
+            <p class="quote" data-aos="fade-up">«Это был воплощенный в краски сон, или туманные и призрачные мечты, или звенящий смех сквозь слезы…»</p>
+            <div class="about" data-aos="fade-up">
                 <div class="about__left">Саратовская школа стоит особняком среди многочисленных творческих объединений рубежа XIX–ХХ веков — радикального «Бубнового валета», эстетского «Мира искусства», лирического Союза русских художников или критически настроенных передвижников. Саратовцы — Виктор Борисов-Мусатов, Кузьма Петров-Водкин, Павел Кузнецов — во многом наследовали Михаилу Врубелю, но отказались от его трагического восприятия мира. </div>
                 <div class="about__right">Они не увлекались радикальными экспериментами и не стремились эпатировать публику резкими высказываниями. Их творчество — своего рода эскапизм и поиск духовного убежища. Излюбленными сюжетами мастеров Саратовской школы становятся кусты роз, серебрящиеся ивовые ветви, таинственные гроты с фонтанами.</div>
             </div>
-            <div class="about">
+            <div class="about" data-aos="fade-up">
                 <div class="about__left">
                     <p><a href="https://www.parter.ru/noapp/eventseries/3061143/?affiliate=IMR" target="_blank" class="link-icon link-icon--left"><span class="icon icon--arrow-right"></span>купить билет</a></p>
                     <p><a href="https://www.rusimp.su/ru/event/private" target="_blank" class="link-icon link-icon--left"><span class="icon icon--arrow-right"></span>заказать экскурсию</a></p>
                     <p>
                         <br><span class="is-bolder">Присоединяйтесь к экскурсии по спецпроекту!</span>
-                        <br>В сопровождении гида вы познакомитесь с феноменом Саратовской школы на примере работ ее крупнейших представителей: прогуляетесь по садам и паркам Виктора Борисова-Мусатова, вместе в Павлом Кузнецовым посетите края заволжских степей, заглянете в Алжир Кузьмы Петрова-Водкина и проникните в тайны символистских пейзажей Петра Уткина.
+                        <br>В сопровождении гида вы познакомитесь с феноменом Саратовской школы на примере работ ее крупнейших представителей:
+                        <ul>
+                            <li>прогуляетесь по садам и паркам Виктора Борисова-Мусатова,</li>
+                            <li>вместе в Павлом Кузнецовым посетите края заволжских степей,</li>
+                            <li>заглянете в Алжир Кузьмы Петрова-Водкина</li>
+                            <li>и проникните в тайны символистских пейзажей Петра Уткина.</li>
+                        </ul>
 
                     </p>
                 </div>
                 <div class="about__right"></div>
             </div>
 
-            <div class="spec-list">
+            <div class="spec-list" data-aos="fade-up">
                 <div class="swiper js-spec-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -321,10 +324,10 @@
         </div>
     </section>
 
-    <section id="">
+    <section id="obr-programm">
         <div class="container">
-            <div class="title-h1">образовательная <br>программа</div>
-            <div class="programm-list">
+            <div class="title-h1" data-aos="fade-up">образовательная <br>программа</div>
+            <div class="programm-list" data-aos="fade-up">
                 <div class="programm-list-wrap">
 
                     <div class="tab-content js-tab-content is-selected" data-tab-id="28-jul">
@@ -428,7 +431,7 @@
         </div>
     </section>
 
-    <section id="excursion">
+    <section id="excursion" data-aos="fade-up">
         <div class="container">
             <div class="title-h1">о музее</div>
             <div class="programm-list">
@@ -446,67 +449,72 @@
                             </div>
                             
                             <div class="about-partner desktop-only">
-                                <span class="is-full">При поддержке:</span>
+                                <span class="is-full">Официальный партнер выставки:</span>
                                 <span>
-                                    <a href="https://premiagi.ru/" target="_blank"><img src="img/fond-logo.png" srcset="img/fond-logo@2x.png 2x" alt=""></a>
+                                    <a href="https://premiagi.ru/" target="_blank"><img src="img/fond-logo.png" srcset="img/fond-logo@2x.png 2x" alt="" width="60" height="60"></a>
                                 </span>
-                                    <span>
-                                    Официальный партнер выставки
-                                    <br>Фонд поддержки национальной премии
+                                <span>
+                                    Фонд поддержки
+                                    <br>национальной премии
                                     <br>«Гражданская инициатива»
                                 </span>
                             </div>
                             <div class="about-partner desktop-only">
-                                <span class="is-full"></span>
+                                <span class="is-full">При поддержке:</span>
                                 <span>
-                                    <a href="https://premiagi.ru/" target="_blank"><img src="https://kassir.ru/media/logo.svg" alt=""></a>
+                                    <a href="https://kassir.ru/" target="_blank"><img src="img/kassir-logo.svg" alt="" width="160" height="39"></a>
                                 </span>
                             </div>
                         </div>
                         <div class="about-museum__right">
                             <div class="about-address">
-                                Москва,
-                                <br>Ленинградский пр. 15, стр. 11
-                                <p><a href="tel:+74951457555">+7 495 145-75-55</a>
-                                <br><a href="tel:mailto:hello@rusimp.org">hello@rusimp.org</a></p>
-                                <br>Понедельник, вторник, пятница, суббота, воскресенье: 11:00 — 20:00
-                                <br>Среда и четверг: 12:00 — 21:00
+                                <p>Москва, Ленинградский пр. 15, стр. 11</p>
 
+                                <p><a href="tel:+74951457555">+7 495 145-75-55</a>
+                                    <br><a href="tel:mailto:hello@rusimp.org">hello@rusimp.org</a></p>
+
+                                <p>Понедельник, вторник, пятница, суббота, воскресенье: 11:00 — 20:00
+                                    <br>Среда и четверг: 12:00 — 21:00</p>
 
                                 <p><a href="#" class="link-icon link-icon--left"><span class="icon icon--arrow-right-brown"></span>как проехать?</a></p>
 
                             </div>
                             
                             <div class="about-museum__info">
-                                <br><p><strong>Правила посещения</strong></p>
-                                <p>Касса заканчивает работу за 30 минут до закрытия. Вход в музей осуществляется по сеансам. Организатор выставки — Музей русского импрессионизма.</p>
-                                <p>Куратор выставки — Анастасия Винокурова</p>
+                                <p><strong>Правила посещения:</strong></p>
+                                <p>Перед посещением выставки рекомендуем ознакомиться с <a href="https://www.rusimp.su/ru/guest#_1" target="_blank">правилами посещения</a></p>
+                                <p>Касса заканчивает работу за 30 минут до закрытия. Вход в музей осуществляется по сеансам.</p>
+
+                                <p><span>Организатор выставки</span><br>— Музей русского импрессионизма.</p>
+                                <p><span>Куратор выставки</span><br> — Анастасия Винокурова</p>
+
+                                <a href="https://5facts.rusimp.su/materials" target="_blank">Соглашение об использовании материалов</a>
 
                                 <div class="social-links">
-                                    <a href="#"><img src="img/social-tg.svg" alt=""></a>
-                                    <a href="#"><img src="img/social-vk.svg" alt=""></a>
-                                    <a href="#"><img src="img/social-yt.svg" alt=""></a>
-                                    <a href="#"><img src="img/social-ok.svg" alt=""></a>
+                                    <a href="https://t.me/rusimp_museum" target="_blank"><img src="img/social-tg.svg" alt=""></a>
+                                    <a href="https://vk.com/rusimp_su" target="_blank"><img src="img/social-vk.svg" alt=""></a>
+                                    <a href="https://www.youtube.com/channel/UCzcMcG7JRAeV-pgC_3EkndA" target="_blank"><img src="img/social-yt.svg" alt=""></a>
+                                    <a href="https://ok.ru/rusimp" target="_blank"><img src="img/social-ok.svg" alt=""></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="about-partner mobile-only">
-                            <span class="is-full">При поддержке:</span>
+                            <span class="is-full">Официальный партнер выставки:</span>
                             <span>
-                                <a href="https://premiagi.ru/" target="_blank"><img src="img/fond-logo.png" srcset="img/fond-logo@2x.png 2x" alt=""></a>
+                                <a href="https://premiagi.ru/" target="_blank"><img src="img/fond-logo.png" srcset="img/fond-logo@2x.png 2x" alt="" width="60" height="60"></a>
                             </span>
                                 <span>
-                                Официальный партнер выставки
-                                <br>Фонд поддержки национальной премии
+                                Фонд поддержки
+                                <br>национальной премии
                                 <br>«Гражданская инициатива»
                             </span>
                         </div>
                         <div class="about-partner mobile-only">
-                            <span class="is-full"></span>
+                            <span class="is-full">При поддержке:</span>
                             <span>
-                                    <a href="https://premiagi.ru/" target="_blank"><img src="https://kassir.ru/media/logo.svg" alt=""></a>
-                                </span>
+                                <a href="https://kassir.ru/" target="_blank"><img src="img/kassir-logo.svg" alt="" width="160" height="39"></a>
+                            </span>
                         </div>
                     </div>
                     
@@ -519,10 +527,12 @@
         <div class="container">
             <div class="footer">
                 <div>Музей русского импрессионизма</div>
-                <div><a href="#">Правила посещения</a></div>
+                <div><a href="https://www.rusimp.su/ru/guest#_1" target="_blank">Правила посещения</a></div>
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/plugins/swiper/swiper-bundle.min.js"></script>

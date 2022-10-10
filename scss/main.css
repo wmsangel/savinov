@@ -76,14 +76,14 @@ body {
   padding: 0;
   font-family: 'Circe', sans-serif;
 }
-.test {
-  color: red;
-}
 * {
   box-sizing: border-box;
 }
 a {
   color: #AF817D;
+}
+.is-bolder {
+  font-family: 'Circe Bold', sans-serif;
 }
 ul {
   list-style: none;
@@ -101,9 +101,6 @@ img {
   max-width: 1310px;
   margin: 0 auto;
   padding: 0 15px;
-}
-.test {
-  color: red;
 }
 section + section {
   margin: 144px 0;
@@ -153,6 +150,15 @@ h2 {
   h2 {
     font-size: 20px;
   }
+}
+.btn-link-red {
+  background: #AF817D;
+  border-radius: 30px;
+  color: #fff !important;
+  padding: 8px 16px;
+}
+.btn-link-red .icon {
+  margin-right: 6px;
 }
 .header {
   padding: 48px 0;
@@ -405,12 +411,12 @@ h2 {
 }
 @media (min-width: 993px) {
   .mobile-only {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 992px) {
   .desktop-only {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 992px) {
@@ -488,6 +494,7 @@ h2 {
   }
 }
 .about-partner {
+  flex-wrap: wrap;
   display: flex;
   margin-top: 32px;
 }
@@ -498,32 +505,40 @@ h2 {
   color: #828282;
 }
 .about-partner span:nth-child(1) {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.about-partner span:nth-child(2) {
   min-width: 85px;
   margin-right: 22px;
 }
+.about-partner span:nth-child(3) {
+  width: calc(100% - 107px);
+}
 .catalog-buy {
+  max-width: 600px;
   display: flex;
-  margin-top: 32px;
+  margin: 90px 0;
 }
 .catalog-buy span:not(.icon) {
-  min-width: 85px;
+  min-width: 200px;
   font-family: 'Circe Light', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
-  color: #828282;
+  color: #000;
 }
 .catalog-buy span:not(.icon) img {
-  min-width: 85px;
+  min-width: 200px;
 }
 .catalog-buy span:not(.icon):nth-child(1) {
   margin-right: 22px;
 }
 .catalog-buy a {
   text-decoration: none;
-  color: #AF817D;
+  color: #AF817D !important;
 }
 .catalog-buy a span {
-  color: #AF817D;
+  color: #AF817D !important;
   font-size: 24px;
 }
 .catalog-buy a span:last-child {
@@ -671,6 +686,11 @@ h2 {
 }
 .picture__img {
   min-width: 410px;
+  max-width: 410px;
+  width: 410px;
+}
+.picture__img img {
+  width: 100%;
 }
 @media (max-width: 1200px) {
   .picture__img {
@@ -706,8 +726,8 @@ h2 {
   font-weight: 400;
   font-size: 36px;
   line-height: 1.2;
-  text-transform: uppercase;
   font-family: 'Wremena', sans-serif;
+  font-style: italic;
 }
 @media (max-width: 1200px) {
   .picture__title {
@@ -741,6 +761,11 @@ h2 {
 .picture__text {
   line-height: 1.5;
   font-size: 18px;
+  font-family: 'Circe Light', sans-serif;
+}
+.picture__text span {
+  font-weight: 600;
+  color: #AF817D;
 }
 @media (max-width: 1200px) {
   .picture__text {
@@ -1007,6 +1032,7 @@ h2 {
   margin-top: 128px;
 }
 .about-museum__img {
+  border: 10px solid #fff;
   margin-bottom: 48px;
 }
 @media (max-width: 768px) {
@@ -1226,5 +1252,10 @@ body.is-header-fixed header {
   body.is-header-fixed {
     padding-top: 72px;
   }
+}
+.quote {
+  font-style: italic;
+  padding: 20px 0;
+  margin-bottom: 32px;
 }
 /*# sourceMappingURL=main.css.map */
