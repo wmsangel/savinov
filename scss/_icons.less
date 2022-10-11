@@ -4,6 +4,12 @@
     background-position: center;
     background-size: contain;
 
+    &--headphones {
+        background-image: url('../img/headerphones.svg');
+        width: 33px;
+        height: 32px;
+    }
+
     &--arrow-right {
         background-image: url('../img/arrow-right-white.svg');
         width: 14px;
@@ -27,13 +33,27 @@
     align-items: center;
     font-size: 24px;
     font-family: @font_light;
+    transition: all .3s ease-in-out;
+    position: relative;
+    text-decoration: none;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 2px;
+        left: 22px;
+        right: 0;
+        height: 1px;
+        background: #fff;
+        transition: all .3s ease-in-out;
+    }
 
     &--left {
         .icon {
             margin-right: 8px;
             transition: all .3s ease-in-out;
             right: 0;
-            top: 1px;
+            top: 0;
             position: relative;
         }
 
@@ -46,6 +66,9 @@
 
 
     &:hover {
+        &:after {
+            left: 100%;
+        }
         span {
             text-decoration: none !important;
         }
