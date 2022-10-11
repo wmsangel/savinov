@@ -3,8 +3,6 @@ $(function(){
     AOS.init({
         once: true, // whether animation should happen only once - while scrolling down
         duration: 900, // values from 0 to 3000, with step 50ms
-
-
     });
 
     $nav = $('header');
@@ -22,8 +20,6 @@ $(function(){
     } else {
         $('body').removeClass('is-header-fixed');
     }
-
-
 
 
     // map popup
