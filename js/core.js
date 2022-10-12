@@ -8,14 +8,14 @@ $(function(){
     $nav = $('header');
     $window = $(window);
     $window.scroll(function(){
-      if ($window.scrollTop() > 80) {
+      if ($window.scrollTop() > 10) {
         $('body').addClass('is-header-fixed');
       } else {
         $('body').removeClass('is-header-fixed');
       }
     });
 
-    if ($window.scrollTop() > 80) {
+    if ($window.scrollTop() > 10) {
         $('body').addClass('is-header-fixed');
     } else {
         $('body').removeClass('is-header-fixed');
