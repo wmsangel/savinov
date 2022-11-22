@@ -556,6 +556,10 @@ h2 {
     flex-wrap: wrap;
     display: flex;
     margin-top: 32px;
+    img {
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
     span {
         &:nth-child(1) {
             width: 100%;
@@ -577,9 +581,11 @@ h2 {
 
     &--filter {
         a {
+            display: inline-flex;
             filter: grayscale(1);
             opacity: .4;
             transition: all .3s ease;
+            text-decoration: none;
             @media (min-width: 768px) {
                 &:hover {
                     filter: grayscale(0);
@@ -975,7 +981,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 40px 0 0 0;
+    margin: 10px 0 40px 0;
     a {
         margin-right: 60px;
         filter: grayscale(1);
@@ -1539,6 +1545,19 @@ h2 {
             width: 100%;
             padding: 0 16px;
             margin-bottom: 24px;
+        }
+    }
+
+    &__btn {
+        margin-top: 18px;
+        span:not(.icon) {
+            font-family: 'Circe', sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .link-icon:after {
+            background: #AF817D;
         }
     }
 

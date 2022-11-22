@@ -742,6 +742,10 @@ h2 {
   display: flex;
   margin-top: 32px;
 }
+.about-partner img {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
 .about-partner span {
   font-family: 'Circe', sans-serif;
   font-weight: 300;
@@ -761,9 +765,11 @@ h2 {
   width: calc(100% - 77px);
 }
 .about-partner--filter a {
+  display: inline-flex;
   filter: grayscale(1);
   opacity: .4;
   transition: all .3s ease;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .about-partner--filter a:hover {
@@ -1152,7 +1158,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin: 40px 0 0 0;
+  margin: 10px 0 40px 0;
 }
 .links-services a {
   margin-right: 60px;
@@ -1675,6 +1681,18 @@ h2 {
     padding: 0 16px;
     margin-bottom: 24px;
   }
+}
+.obr-programm__btn {
+  margin-top: 18px;
+}
+.obr-programm__btn span:not(.icon) {
+  font-family: 'Circe', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.obr-programm__btn .link-icon:after {
+  background: #AF817D;
 }
 .obr-programm__info {
   width: calc(100% - 410px);
